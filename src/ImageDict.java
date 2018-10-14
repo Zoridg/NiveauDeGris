@@ -80,7 +80,7 @@ public class ImageDict implements ImageGrise {
     public void allumer(int x, int y) {
         Couple<Integer, Integer> coupleXY = new CoupleObj<>(x, y);
         if(this.tabDict.contientClef(coupleXY)){
-            this.tabDict.valeurPour(coupleXY).ajouter(NiveauGris.NOIR);
+            this.tabDict.ajouter(coupleXY, NiveauGris.NOIR);
         }
     }
 
@@ -94,7 +94,7 @@ public class ImageDict implements ImageGrise {
     public void eteindre(int x, int y) {
         Couple<Integer, Integer> coupleXY = new CoupleObj<>(x, y);
         if(this.tabDict.contientClef(coupleXY)){
-            this.tabDict.valeurPour(coupleXY).ajouter(NiveauGris.BLANC);
+            this.tabDict.ajouter(coupleXY, NiveauGris.BLANC);
         }
     }
 
