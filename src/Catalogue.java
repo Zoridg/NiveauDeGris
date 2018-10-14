@@ -9,7 +9,7 @@ public class Catalogue
 {
     public static ImageGrise fasce()
     {
-	ImageGrise img = new ImageTab(21,21) ;
+	ImageGrise img = new ImageDict(21,21) ;
 	for (int x=0; x<21; x++)
 	    for (int i=-2; i<=2; i++)
 		img.allumer(x, 10+i) ;
@@ -18,7 +18,7 @@ public class Catalogue
 
     public static ImageGrise pal() 
     {
-	ImageGrise img = new ImageTab(21,21) ;
+	ImageGrise img = new ImageDict(21,21) ;
 	for (int y=0; y<21; y++)
 	    for (int i=-2; i<=2; i++)
 		img.allumer(10+i, y) ;
@@ -27,7 +27,7 @@ public class Catalogue
 
     public static ImageGrise bande() 
     {
-	ImageGrise img = new ImageTab(21,21) ;
+	ImageGrise img = new ImageDict(21,21) ;
 	for (int x=0; x<21; x++)
 	    for (int i=-2; i<=2; i++)
 		img.allumer(Math.max(0,Math.min(20,x+i)), x) ;
@@ -36,7 +36,7 @@ public class Catalogue
 
     public static ImageGrise barre() 
     {
-	ImageGrise img = new ImageTab(21,21) ;
+	ImageGrise img = new ImageDict(21,21) ;
 	for (int x=0; x<21; x++)
 	    for (int i=-2; i<=2; i++)
 		img.allumer(Math.max(0,Math.min(20,20-(x+i))), x) ;
@@ -45,7 +45,7 @@ public class Catalogue
     
     public static ImageGrise ellipse1(int kx, int ky) 
     {
-	ImageGrise img = new ImageTab(200,200) ;
+	ImageGrise img = new ImageDict(200,200) ;
 	NiveauGris gris ;
 	int x, y ;
 	for (double angle=0; angle<2*Math.PI; angle+=0.01)
@@ -60,7 +60,7 @@ public class Catalogue
 
     public static ImageGrise ellipse2(int phi) 
     {
-	ImageGrise img = new ImageTab(200,200) ;
+	ImageGrise img = new ImageDict(200,200) ;
 	NiveauGris gris ;
 	int x, y ;
 	for (double angle=0; angle<2*Math.PI; angle+=0.01)
@@ -75,9 +75,9 @@ public class Catalogue
 
     public static void main(String [] arg) 
     {
-//	ImageGrise img = fasce().ajouter(barre().eclaircir().inverser());
-//	System.out.println(img);
-//	Afficheur.afficher(img,20);
+	ImageGrise img = fasce();
+	System.out.println(img);
+	Afficheur.afficher(img,20);
 //	Afficheur.afficher(ellipse1(1,2).ajouter(ellipse2(-30)), 2);
 
     }
