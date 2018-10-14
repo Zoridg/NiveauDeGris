@@ -301,7 +301,17 @@ public class ImageDict implements ImageGrise {
      */
     @Override
     public NiveauGris niveauMoyen() {
-        return null;
+        int niveauBlanc = compterPoints(NiveauGris.BLANC);
+        int niveauGrisClair = compterPoints(NiveauGris.GRIS_CLAIR);
+        int niveauGrisMoyen = compterPoints(NiveauGris.GRIS_MOYEN);
+        int niveauGrisFonce = compterPoints(NiveauGris.GRIS_FONCE);
+        int niveauNoir = compterPoints(NiveauGris.NOIR);
+        int somme = niveauBlanc + niveauGrisClair + niveauGrisMoyen + niveauGrisFonce + niveauNoir;
+        int result = (niveauBlanc * NiveauGris.BLANC.ordinal()) + (niveauGrisClair * NiveauGris.GRIS_CLAIR.ordinal()) +
+                (niveauGrisMoyen * NiveauGris.GRIS_MOYEN.ordinal()) + (niveauGrisFonce * NiveauGris.GRIS_FONCE.ordinal()) +
+                (niveauNoir * NiveauGris.NOIR.ordinal());
+        result = result / somme;
+        return NiveauGris.values()[result];
     }
 
     /**
@@ -313,6 +323,19 @@ public class ImageDict implements ImageGrise {
      */
     @Override
     public ImageGrise augmenterContraste() {
-        return null;
+        ImageGrise imageGrise = new ImageTab(largeur, hauteur);
+        NiveauGris niveauMoyen = this.niveauMoyen();
+        for(int i = 0; i < this.largeur; i++){
+            for(int j = 0; j < this.hauteur; j++){
+                NiveauGris niveauGrisInstance = pointEn(i, j);
+                if(niveauGrisInstance.ordinal() > niveauMoyen.ordinal()){
+                    imageGrise.definirPoint(i, j, pointEn(i, j).assombrir());
+                }
+                else if(niveauGrisInstance.ordinal() < niveauMoyen.ordinal()){
+                    imageGrise.definirPoint(i, j, pointEn(i, j).eclaircir());
+                }
+            }
+        }
+        return imageGrise;
     }
 }
