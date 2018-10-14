@@ -86,21 +86,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="195" />
+          <entry key="java" value="240" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="195" />
+          <entry key="JAVA" value="240" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="1" />
           <entry key="java" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="1" />
           <entry key="JAVA" value="1" />
         </counts>
       </usages-collector>
@@ -123,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ImageTab.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5117">
-              <caret line="301" selection-start-line="301" selection-end-line="314" selection-end-column="26" />
+            <state relative-caret-position="2211">
+              <caret line="307" column="68" lean-forward="true" selection-start-line="307" selection-start-column="68" selection-end-line="307" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#616#617#0" expanded="true" />
@@ -144,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Catalogue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+            <state relative-caret-position="1278">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,11 +158,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ImageDict.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="330" column="73" selection-start-line="330" selection-start-column="73" selection-end-line="330" selection-end-column="73" />
+            <state relative-caret-position="1557">
+              <caret line="215" column="79" selection-start-line="215" selection-start-column="79" selection-end-line="215" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#892#893#0" expanded="true" />
@@ -284,7 +286,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539539466150" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539541215886" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -348,7 +350,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24615385" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29384616" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.29384616" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -397,10 +399,21 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ImageDict.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/COURS IUT/Génie logiciel/pr4/classes/affichage.jar!/image/Viewer.class" />
     <entry file="jar://D:/COURS IUT/Génie logiciel/pr4/classes/affichage.jar!/image/Exemples.class" />
-    <entry file="jar://D:/COURS IUT/Génie logiciel/pr4/classes/affichage.jar!/image/Afficheur.class" />
     <entry file="jar://$USER_HOME$/Documents/Projets/GL/pr4/classes/affichage.jar!/image/Afficheur.class" />
     <entry file="jar://$USER_HOME$/Documents/Projets/GL/pr4/classes/affichage.jar!/image/Viewer.class" />
     <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Enum.class" />
@@ -464,10 +477,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/NiveauGris.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#3231#3232#0" expanded="true" />
+            <element signature="e#3281#3282#0" expanded="true" />
+            <element signature="e#4285#4286#0" expanded="true" />
+            <element signature="e#4341#4342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/COURS IUT/Génie logiciel/pr4/classes/affichage.jar!/image/Afficheur.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ImageTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5117">
-          <caret line="301" selection-start-line="301" selection-end-line="314" selection-end-column="26" />
+        <state relative-caret-position="2211">
+          <caret line="307" column="68" lean-forward="true" selection-start-line="307" selection-start-column="68" selection-end-line="307" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#616#617#0" expanded="true" />
@@ -488,31 +525,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Catalogue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        <state relative-caret-position="1278">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NiveauGris.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="e#3231#3232#0" expanded="true" />
-            <element signature="e#3281#3282#0" expanded="true" />
-            <element signature="e#4285#4286#0" expanded="true" />
-            <element signature="e#4341#4342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ImageDict.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="330" column="73" selection-start-line="330" selection-start-column="73" selection-end-line="330" selection-end-column="73" />
+        <state relative-caret-position="1557">
+          <caret line="215" column="79" selection-start-line="215" selection-start-column="79" selection-end-line="215" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#892#893#0" expanded="true" />

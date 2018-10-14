@@ -75,9 +75,10 @@ public class Catalogue
 
     public static void main(String [] arg) 
     {
-	ImageGrise img = fasce().ajouter(barre().eclaircir().inverser());
-	System.out.println(img);
-	Afficheur.afficher(img,20);
+	    ImageGrise img = fasce();
+	    Afficheur.afficher(img,20);
+        ImageGrise img2 = barre();
+        img.ajouter(img2);
 //	Afficheur.afficher(ellipse1(1,2).ajouter(ellipse2(-30)), 2);
 
     }
