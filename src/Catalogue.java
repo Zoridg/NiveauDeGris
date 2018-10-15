@@ -69,18 +69,17 @@ public class Catalogue
 		y = (int)(Math.sin(angle)*90) ;
 		gris = NiveauGris.deLuminosite(Math.abs(Math.cos(angle*phi/Math.PI)+1)) ;
 		img.definirPoint(x/2+100, y+100, gris.assombrir()) ; 
-	    }			
+	    }
 	return img ;
     }
 
     public static void main(String [] arg) 
     {
-	    ImageGrise img = fasce();
-//	    Afficheur.afficher(img,20);
-        ImageGrise img2 = barre();
-//        Afficheur.afficher(img2, 20);
-        Afficheur.afficher(img.ajouter(img2), 20);
-//		Afficheur.afficher(ellipse1(1,2).ajouter(ellipse2(-30)), 2);
-
+		ImageGrise img = fasce();
+		Afficheur.afficher(img, 20);
+		ImageGrise img2 = barre();
+		Afficheur.afficher(img2, 20);
+		Afficheur.afficher(img.ajouter(img2), 20);
+		Afficheur.afficher(ellipse1(1, 2).ajouter(ellipse2(-30)), 2);
     }
 }

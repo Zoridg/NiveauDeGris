@@ -66,7 +66,7 @@ public class ImageDict implements ImageGrise {
     public void definirPoint(int x, int y, NiveauGris gris) {
         Couple<Integer, Integer> coupleXY = new CoupleObj<>(x, y);
         if(this.tabDict.contientClef(coupleXY)){
-            this.tabDict.valeurPour(coupleXY).ajouter(gris);
+            this.tabDict.ajouter(coupleXY, gris);
         }
     }
 
@@ -211,7 +211,8 @@ public class ImageDict implements ImageGrise {
         else {
             for(int i = 0; i < largeur; i++){
                 for(int j = 0; j < hauteur; j++){
-                    imageGrise.definirPoint(i, j, pointEn(i, j).ajouter(img.pointEn(i, j)));
+                    // if(this.pointEn(i, j).equals())
+                     imageGrise.definirPoint(i, j, pointEn(i, j).ajouter(img.pointEn(i, j)));
                 }
             }
         }
