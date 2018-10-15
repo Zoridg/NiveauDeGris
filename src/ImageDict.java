@@ -140,9 +140,7 @@ public class ImageDict implements ImageGrise {
         for(int i = 0; i < this.largeur; i++){
             for(int j = 0; j < this.hauteur; j++){
                 Couple<Integer, Integer> coupleXY = new CoupleObj<>(i, j);
-                if(this.tabDict.valeurPour(coupleXY).equals(NiveauGris.BLANC)){
-                    imageGrise.definirPoint(i, j, this.tabDict.valeurPour(coupleXY).inverser());
-                }
+                imageGrise.definirPoint(i, j, this.tabDict.valeurPour(coupleXY).inverser());
             }
         }
         return imageGrise;
@@ -158,7 +156,7 @@ public class ImageDict implements ImageGrise {
         for(int i = 0; i < this.largeur; i++){
             for(int j = 0; j < this.hauteur; j++){
                 Couple<Integer, Integer> coupleXY = new CoupleObj<>(i, j);
-                if(this.tabDict.valeurPour(coupleXY).equals(NiveauGris.BLANC)){
+                if(!this.tabDict.valeurPour(coupleXY).equals(NiveauGris.BLANC)){
                     imageGrise.definirPoint(i, j, this.tabDict.valeurPour(coupleXY).eclaircir());
                 }
             }
@@ -176,7 +174,7 @@ public class ImageDict implements ImageGrise {
         for(int i = 0; i < this.largeur; i++){
             for(int j = 0; j < this.hauteur; j++){
                 Couple<Integer, Integer> coupleXY = new CoupleObj<>(i, j);
-                if(this.tabDict.valeurPour(coupleXY).equals(NiveauGris.BLANC)){
+                if(!this.tabDict.valeurPour(coupleXY).equals(NiveauGris.NOIR)){
                     imageGrise.definirPoint(i, j, this.tabDict.valeurPour(coupleXY).assombrir());
                 }
             }

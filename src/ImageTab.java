@@ -117,9 +117,7 @@ public class ImageTab implements ImageGrise {
         ImageGrise imageGrise = new ImageTab(largeur, hauteur);
         for(int i = 0; i < this.largeur; i++){
             for(int j = 0; j < this.hauteur; j++){
-                if(this.nv[i][j] == NiveauGris.BLANC){
-                    imageGrise.definirPoint(i, j, this.nv[i][j].inverser());
-                }
+                imageGrise.definirPoint(i, j, this.nv[i][j].inverser());
             }
         }
         return imageGrise;
