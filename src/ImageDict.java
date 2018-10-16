@@ -211,7 +211,6 @@ public class ImageDict implements ImageGrise {
         else {
             for(int i = 0; i < largeur; i++){
                 for(int j = 0; j < hauteur; j++){
-                    // if(this.pointEn(i, j).equals())
                      imageGrise.definirPoint(i, j, pointEn(i, j).ajouter(img.pointEn(i, j)));
                 }
             }
